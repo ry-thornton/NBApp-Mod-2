@@ -7,9 +7,11 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Faster+One|Kanit&display=swap" rel="stylesheet">
   </head>
 
   <body background="background.jpg">
+    <div>
     <% if logged_in? %>
       <h5>Logged In As: <%= link_to current_user.username, user_path(current_user.id) %></h5>
       <%= button_to "Logout", session_path(current_user.id), method: :delete %>
@@ -20,8 +22,7 @@
     <%= button_to "Players", players_path, method: :get %>
     <%= button_to "Teams", teams_path, method: :get %>
     <%= button_to "Games", games_path, method: :get %>
-    
-
+    </div> 
     <%= yield %>
   </body>
 </html>

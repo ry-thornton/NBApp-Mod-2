@@ -16,14 +16,26 @@
 @import "bootstrap";
 
 
-// h1 {
-//     font-color: #fff;
-// }
 
-// body {
-//     background-image: url("hardwood.jpg");
-//     font-family: Helvetica, Geneva, Arial, sans-serif;
-//     font-size: small;
-//     font-color: rgb(3, 3, 3);
-//     background-color: rgb(96, 231, 255)
-// }
+#logo{
+    font-family: 'Faster One', cursive;
+    font-size: 100px;
+}
+body {
+    background-color: #17408B;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    
+}
+#menu{
+    float: left;
+}
+a{
+    color: lightgray;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
